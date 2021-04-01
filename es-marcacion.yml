@@ -1,0 +1,14 @@
+server:
+ port: 8071
+
+spring:  datasource:    url: jdbc:postgresql://localhost:5432/gotalent
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    
+  jpa:    hibernate:      ddl-auto: update
+    show-sql: true
+    properties:      jdbc:
+        lob:
+          non_contextual_creational: true
+  kafka:    bootstrap-servers: localhost:9092    consumer:      group-id: myGroup
