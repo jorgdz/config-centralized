@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/gotalent
+    url: jdbc:postgresql://192.168.1.6:5433/gotalent
     username: postgres
     password: admin
     driver-class-name: org.postgresql.Driver
